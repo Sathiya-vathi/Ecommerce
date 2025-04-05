@@ -74,7 +74,7 @@ public class OrderService {
 
             if (cart.getCartItems().isEmpty()) {
                 logger.warn("User ID {} attempted to place an order with an empty cart", user.getId());
-                throw new RuntimeException("❌ Cart is empty, cannot place order"); // ✅ important!
+                throw new RuntimeException("Cart is empty, cannot place order"); 
             }
 
             BigDecimal totalAmount = getCartTotal();
@@ -104,7 +104,7 @@ public class OrderService {
 
         } catch (RuntimeException e) {
             logger.error("Error placing order: {}", e.getMessage());
-            throw e; // ✅ preserve original message
+            throw e; 
         } catch (Exception e) {
             logger.error("Unexpected error placing order: {}", e.getMessage());
             throw new RuntimeException("Error placing order");
@@ -205,19 +205,19 @@ public class OrderService {
                     .orElseThrow(() -> new RuntimeException("Order not found"));
 
             if (order.getUser().getId() != user.getId()) {
-                throw new RuntimeException("❌ You are not authorized to cancel this order");
+                throw new RuntimeException("You are not authorized to cancel this order");
             }
 
             if (order.getStatus() == OrderStatus.SHIPPED || order.getStatus() == OrderStatus.DELIVERED) {
-                throw new RuntimeException("❌ Cannot cancel an order that has already been shipped or delivered");
+                throw new RuntimeException("Cannot cancel an order that has already been shipped or delivered");
             }
 
             String message;
 
             if (order.getStatus() == OrderStatus.PLACED) {
-                message = "✅ Order cancelled. Amount will be refunded shortly.";
+                message = "Order cancelled. Amount will be refunded shortly.";
             } else {
-                message = "✅ Order cancelled successfully.";
+                message = "Order cancelled successfully.";
             }
 
             order.setStatus(OrderStatus.CANCELLED);

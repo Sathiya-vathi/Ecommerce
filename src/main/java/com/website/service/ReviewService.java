@@ -37,26 +37,26 @@ public class ReviewService {
 
     //Add a Review (Only if the user purchased the product)
     public ReviewDTO addReview(String email, Long productId, int rating, String comment) {
-        logger.info("🔹 Adding review for product ID: {} by user: {}", productId, email);
+        logger.info("Adding review for product ID: {} by user: {}", productId, email);
 
         try {
             User user = userRepository.findByEmail(email);
             if (user == null) {
-                String msg = "❌ User not found with email: " + email;
+                String msg = "User not found with email: " + email;
                 logger.error(msg);
                 throw new RuntimeException(msg);
             }
 
             Product product = productRepository.findById(productId)
                     .orElseThrow(() -> {
-                        String msg = "❌ Product not found with ID: " + productId;
+                        String msg = "Product not found with ID: " + productId;
                         logger.error(msg);
                         return new RuntimeException(msg);
                     });
 
             boolean hasPurchased = orderRepository.existsByUserIdAndProductId(user.getId(), productId);
             if (!hasPurchased) {
-                String msg = "❌ User has not purchased this product.";
+                String msg = "User has not purchased this product.";
                 logger.warn(msg);
                 throw new ReviewNotAllowedException(msg);
             }
@@ -68,19 +68,19 @@ public class ReviewService {
             review.setComment(comment);
             review = reviewRepository.save(review);
 
-            logger.info("✅ Review added successfully with ID: {}", review.getId());
+            logger.info("Review added successfully with ID: {}", review.getId());
 
             return new ReviewDTO(review.getId(), user.getId(), productId, rating, comment, review.getCreatedAt());
 
         } catch (RuntimeException e) {
-            logger.error("❌ Error adding review: {}", e.getMessage(), e);
+            logger.error("Error adding review: {}", e.getMessage(), e);
             throw e;
         }
     }
 
     //Get all reviews for a product
     public List<ReviewDTO> getReviewsByProduct(Long productId) {
-        logger.info("🔍 Fetching reviews for product ID: {}", productId);
+        logger.info("Fetching reviews for product ID: {}", productId);
         try {
             return reviewRepository.findByProductId(productId).stream()
                     .map(review -> new ReviewDTO(
@@ -88,7 +88,7 @@ public class ReviewService {
                             review.getRating(), review.getComment(), review.getCreatedAt()))
                     .collect(Collectors.toList());
         } catch (Exception e) {
-            logger.error("❌ Failed to fetch reviews for product ID {}: {}", productId, e.getMessage(), e);
+            logger.error("Failed to fetch reviews for product ID {}: {}", productId, e.getMessage(), e);
             throw new RuntimeException("Failed to fetch reviews");
         }
     }

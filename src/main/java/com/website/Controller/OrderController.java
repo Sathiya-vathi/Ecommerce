@@ -58,7 +58,7 @@ public class OrderController {
             logger.info("Creating payment session for Order ID: {}, amount: ₹{}", orderId, amount);
 
             if (amount.compareTo(BigDecimal.ZERO) <= 0) {
-                return ResponseEntity.badRequest().body(Map.of("error", "❌ Invalid amount"));
+                return ResponseEntity.badRequest().body(Map.of("error", " Invalid amount"));
             }
 
             SessionCreateParams params = SessionCreateParams.builder()
@@ -102,19 +102,19 @@ public class OrderController {
                 String orderIdStr = session.getMetadata().get("order_id");
                 Long orderId = Long.parseLong(orderIdStr);
 
-                // ✅ Update order status to PLACED
+                // Update order status to PLACED
                 orderService.updateOrderStatus(orderId, OrderStatus.PLACED);
                 logger.info("Order ID {} marked as PLACED after successful payment.", orderId);
 
                 return ResponseEntity.ok(Map.of(
                     "status", "success",
-                    "message", "✅ Payment successful and order placed",
+                    "message", "Payment successful and order placed",
                     "orderId", orderId
                 ));
             } else {
                 return ResponseEntity.badRequest().body(Map.of(
                     "status", "failed",
-                    "message", "❌ Payment not completed"
+                    "message", "Payment not completed"
                 ));
             }
         } catch (StripeException e) {
