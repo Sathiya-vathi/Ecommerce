@@ -1,0 +1,193 @@
+2025-04-05 15:38:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-05 15:38:14 [main] INFO  com.website.WebsiteApplication - Starting WebsiteApplication using Java 21.0.1 with PID 21108 (D:\Users\SATHIYAVATHI\eclipse-workspace\Website\target\classes started by SATHIYAVATHI in D:\Users\SATHIYAVATHI\eclipse-workspace\Website)
+2025-04-05 15:38:14 [main] INFO  com.website.WebsiteApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-05 15:38:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-05 15:38:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 9 JPA repository interfaces.
+2025-04-05 15:38:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-05 15:38:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-05 15:38:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-05 15:38:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-05 15:38:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-05 15:38:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1599 ms
+2025-04-05 15:38:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-05 15:38:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-05 15:38:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-05 15:38:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-05 15:38:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-05 15:38:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2833c093
+2025-04-05 15:38:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-05 15:38:17 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-05 15:38:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-05 15:38:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-05 15:38:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-05 15:38:19 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-05 15:38:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-05 15:38:20 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImp
+2025-04-05 15:38:20 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-04-05 15:38:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-05 15:38:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-04-05 15:38:20 [main] INFO  com.website.WebsiteApplication - Started WebsiteApplication in 6.324 seconds (process running for 7.124)
+2025-04-05 15:38:44 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-05 15:38:44 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-05 15:38:44 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-04-05 15:38:44 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /orders/place
+2025-04-05 15:38:44 [http-nio-8080-exec-5] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:38:45 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:38:45 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@5fc2dbf1]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@5fc2dbf1]]
+2025-04-05 15:38:45 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /orders/place
+2025-04-05 15:38:45 [http-nio-8080-exec-5] INFO  com.website.service.OrderService - Placing order for user ID: 2
+2025-04-05 15:38:45 [http-nio-8080-exec-5] INFO  com.website.service.OrderService - Fetching cart total for user ID: 2
+2025-04-05 15:38:45 [http-nio-8080-exec-5] INFO  com.website.service.CartService - Fetching cart for user: Sathiyavathi2003@gmail.com
+2025-04-05 15:38:45 [http-nio-8080-exec-5] INFO  com.website.service.OrderService - Order placed successfully. Order ID: 11
+2025-04-05 15:39:06 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /orders/create-payment?orderId=11
+2025-04-05 15:39:06 [http-nio-8080-exec-2] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:39:06 [http-nio-8080-exec-2] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:39:06 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@4aef7afd]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@4aef7afd]]
+2025-04-05 15:39:06 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /orders/create-payment?orderId=11
+2025-04-05 15:39:06 [http-nio-8080-exec-2] INFO  c.website.Controller.OrderController - Creating payment session for Order ID: 11, amount: ₹59400.00
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/verify-payment?session_id=cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?session_id=cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:40:49 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/verify-payment?session_id=cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?session_id=cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:40:49 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:41:09 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/verify-payment?session_id=cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:41:09 [http-nio-8080-exec-9] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:41:09 [http-nio-8080-exec-9] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:41:09 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@7e13bc48]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@7e13bc48]]
+2025-04-05 15:41:09 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/verify-payment?session_id=cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:41:09 [http-nio-8080-exec-9] INFO  c.website.Controller.OrderController - Verifying payment for session: cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb
+2025-04-05 15:41:10 [http-nio-8080-exec-9] INFO  c.website.Controller.OrderController - Payment status for session cs_test_a1z4clS74VDOjECbleueBF3PUdobwL6G3Gbs558sTeSU0ktsuUmOxma4Mb: paid
+2025-04-05 15:41:10 [http-nio-8080-exec-9] INFO  com.website.service.OrderService - Updating order status for Order ID: 11 to PLACED
+2025-04-05 15:41:15 [http-nio-8080-exec-9] INFO  com.website.service.OrderService - Order ID 11 status updated to PLACED. Email sent to Sathiyavathi2003@gmail.com
+2025-04-05 15:41:15 [http-nio-8080-exec-9] INFO  c.website.Controller.OrderController - Order ID 11 marked as PLACED after successful payment.
+2025-04-05 15:48:36 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/cart/items
+2025-04-05 15:48:36 [http-nio-8080-exec-5] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:48:36 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:48:36 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@23bcc7a]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@23bcc7a]]
+2025-04-05 15:48:36 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/cart/items
+2025-04-05 15:48:36 [http-nio-8080-exec-5] INFO  com.website.service.CartService - Fetching cart for user: Sathiyavathi2003@gmail.com
+2025-04-05 15:49:22 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /orders/place
+2025-04-05 15:49:22 [http-nio-8080-exec-2] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:49:22 [http-nio-8080-exec-2] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:49:22 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@543e74c5]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@543e74c5]]
+2025-04-05 15:49:22 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /orders/place
+2025-04-05 15:49:22 [http-nio-8080-exec-2] INFO  com.website.service.OrderService - Placing order for user ID: 2
+2025-04-05 15:49:22 [http-nio-8080-exec-2] INFO  com.website.service.OrderService - Fetching cart total for user ID: 2
+2025-04-05 15:49:22 [http-nio-8080-exec-2] INFO  com.website.service.CartService - Fetching cart for user: Sathiyavathi2003@gmail.com
+2025-04-05 15:49:22 [http-nio-8080-exec-2] INFO  com.website.service.OrderService - Order placed successfully. Order ID: 12
+2025-04-05 15:49:42 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /orders/create-payment?orderId=12
+2025-04-05 15:49:42 [http-nio-8080-exec-1] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:49:42 [http-nio-8080-exec-1] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:49:42 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@1cdcdf3f]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@1cdcdf3f]]
+2025-04-05 15:49:42 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /orders/create-payment?orderId=12
+2025-04-05 15:49:42 [http-nio-8080-exec-1] INFO  c.website.Controller.OrderController - Creating payment session for Order ID: 12, amount: ₹59400.00
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/verify-payment?session_id=cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?session_id=cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:50:41 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/verify-payment?session_id=cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?session_id=cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-04-05 15:50:41 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5e19cfe7
+2025-04-05 15:51:11 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/verify-payment?session_id=cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:51:11 [http-nio-8080-exec-10] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:51:11 [http-nio-8080-exec-10] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:51:11 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@5918c9bd]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@5918c9bd]]
+2025-04-05 15:51:11 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/verify-payment?session_id=cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:51:11 [http-nio-8080-exec-10] INFO  c.website.Controller.OrderController - Verifying payment for session: cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N
+2025-04-05 15:51:12 [http-nio-8080-exec-10] INFO  c.website.Controller.OrderController - Payment status for session cs_test_a1SejwOKKUczJYoNrdeI4Q2ZBGvlbDs55aXWRPWsNj5ouiGrQgx6RRji5N: paid
+2025-04-05 15:51:12 [http-nio-8080-exec-10] INFO  com.website.service.OrderService - Updating order status for Order ID: 12 to PLACED
+2025-04-05 15:51:18 [http-nio-8080-exec-10] INFO  com.website.service.OrderService - Order ID 12 status updated to PLACED. Email sent to Sathiyavathi2003@gmail.com
+2025-04-05 15:51:18 [http-nio-8080-exec-10] INFO  c.website.Controller.OrderController - Order ID 12 marked as PLACED after successful payment.
+2025-04-05 15:53:57 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/all
+2025-04-05 15:53:57 [http-nio-8080-exec-2] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:53:57 [http-nio-8080-exec-2] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:53:57 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@5a9228d7]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@5a9228d7]]
+2025-04-05 15:53:57 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2025-04-05 15:53:57 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-04-05 15:53:57 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-04-05 15:54:15 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/filter-by-price?minPrice=10000&maxPrice=60000
+2025-04-05 15:54:15 [http-nio-8080-exec-1] INFO  com.website.service.UserService - Finding user by email: admin@gmail.com
+2025-04-05 15:54:16 [http-nio-8080-exec-1] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:54:16 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Admin@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@136a059f]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@136a059f]]
+2025-04-05 15:54:16 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/filter-by-price?minPrice=10000&maxPrice=60000
+2025-04-05 15:54:16 [http-nio-8080-exec-1] INFO  com.website.service.OrderService - Filtering orders between ₹10000 and ₹60000
+2025-04-05 15:54:36 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/my-orders
+2025-04-05 15:54:36 [http-nio-8080-exec-3] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 15:54:36 [http-nio-8080-exec-3] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 15:54:36 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@2e1f08f7]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@2e1f08f7]]
+2025-04-05 15:54:36 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/my-orders
+2025-04-05 15:54:36 [http-nio-8080-exec-3] INFO  com.website.service.OrderService - Fetching orders for user ID: 2
+2025-04-05 16:02:36 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /orders/cancel/7
+2025-04-05 16:02:36 [http-nio-8080-exec-9] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 16:02:37 [http-nio-8080-exec-9] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:02:37 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@3120edb]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@3120edb]]
+2025-04-05 16:02:37 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /orders/cancel/7
+2025-04-05 16:02:37 [http-nio-8080-exec-9] INFO  com.website.service.OrderService - User ID 2 requested cancellation for order ID 7
+2025-04-05 16:02:37 [http-nio-8080-exec-9] INFO  com.website.service.OrderService - Order ID 7 cancelled by user ID 2
+2025-04-05 16:03:44 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /orders/cancel/11
+2025-04-05 16:03:44 [http-nio-8080-exec-4] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 16:03:44 [http-nio-8080-exec-4] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:03:44 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@c781d56]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@c781d56]]
+2025-04-05 16:03:44 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /orders/cancel/11
+2025-04-05 16:03:44 [http-nio-8080-exec-4] INFO  com.website.service.OrderService - User ID 2 requested cancellation for order ID 11
+2025-04-05 16:03:45 [http-nio-8080-exec-4] INFO  com.website.service.OrderService - Order ID 11 cancelled by user ID 2
+2025-04-05 16:04:22 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /orders/cancel/10
+2025-04-05 16:04:22 [http-nio-8080-exec-5] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 16:04:23 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:04:23 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@60254653]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@60254653]]
+2025-04-05 16:04:23 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /orders/cancel/10
+2025-04-05 16:04:23 [http-nio-8080-exec-5] INFO  com.website.service.OrderService - User ID 2 requested cancellation for order ID 10
+2025-04-05 16:04:23 [http-nio-8080-exec-5] ERROR com.website.service.OrderService - Error cancelling order: ❌ Cannot cancel an order that has already been shipped or delivered
+2025-04-05 16:07:57 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/12
+2025-04-05 16:07:57 [http-nio-8080-exec-1] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 16:07:57 [http-nio-8080-exec-1] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:07:57 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@a6336]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@a6336]]
+2025-04-05 16:07:57 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/12
+2025-04-05 16:09:31 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /orders/update-status/12?status=SHIPPED
+2025-04-05 16:09:31 [http-nio-8080-exec-7] INFO  com.website.service.UserService - Finding user by email: Admin@gmail.com
+2025-04-05 16:09:32 [http-nio-8080-exec-7] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:09:32 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Admin@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@4bd4d520]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@4bd4d520]]
+2025-04-05 16:09:32 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /orders/update-status/12?status=SHIPPED
+2025-04-05 16:09:32 [http-nio-8080-exec-7] INFO  com.website.service.OrderService - Updating order status for Order ID: 12 to SHIPPED
+2025-04-05 16:09:37 [http-nio-8080-exec-7] INFO  com.website.service.OrderService - Order ID 12 status updated to SHIPPED. Email sent to Sathiyavathi2003@gmail.com
+2025-04-05 16:11:59 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/all
+2025-04-05 16:11:59 [http-nio-8080-exec-8] INFO  com.website.service.UserService - Finding user by email: Admin@gmail.com
+2025-04-05 16:12:00 [http-nio-8080-exec-8] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:12:00 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Admin@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@42d3ac5d]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@42d3ac5d]]
+2025-04-05 16:12:00 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/all
+2025-04-05 16:12:00 [http-nio-8080-exec-8] INFO  com.website.service.OrderService - Fetching all orders (admin access)
+2025-04-05 16:14:57 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /orders/invoice/12
+2025-04-05 16:14:57 [http-nio-8080-exec-2] INFO  com.website.service.UserService - Finding user by email: Sathiyavathi2003@gmail.com
+2025-04-05 16:14:58 [http-nio-8080-exec-2] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-04-05 16:14:58 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=Sathiyavathi2003@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[com.website.entities.Role@5967e640]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[com.website.entities.Role@5967e640]]
+2025-04-05 16:14:58 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /orders/invoice/12
+2025-04-05 18:17:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h58m1s395ms411µs).
+2025-04-05 20:17:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s745ms784µs700ns).
+2025-04-05 22:37:51 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h20m25s693ms135µs).
