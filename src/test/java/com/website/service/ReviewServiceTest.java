@@ -89,7 +89,7 @@ class ReviewServiceTest {
         Exception exception = assertThrows(RuntimeException.class, () ->
                 reviewService.addReview("test@example.com", 100L, 5, "Great product!"));
 
-        assertEquals("You can only review products you purchased.", exception.getMessage());
+        assertEquals("User has not purchased this product.", exception.getMessage());
         verify(reviewRepository, never()).save(any(Review.class));
     }
 
