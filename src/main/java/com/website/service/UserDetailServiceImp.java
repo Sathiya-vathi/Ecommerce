@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.website.entities.User;
+import com.website.security.CustomUserDetails;
 
 
 @Service
@@ -26,11 +27,7 @@ public class UserDetailServiceImp implements UserDetailsService {
 		}
 		
 		
-		// Return a Spring Security UserDetails object with email, password, and roles
-		return new org.springframework.security.core.userdetails.User(
-				user.getEmail(),
-				user.getPassword(),
-				user.getRole());
+return new CustomUserDetails(user);
 	}
 	
 
